@@ -13,7 +13,7 @@
 
 <body <?php body_class(); ?>>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
 
         <a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>">

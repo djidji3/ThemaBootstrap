@@ -1,23 +1,18 @@
-<?php get_header(); ?>
+<!-- Ha a kert oldalra nincs direct fajl,akkor ez fog betoltodni -->
+<?php get_header();?>
 
 <main class="container my-5">
     <div class="row">
-        <div class="col-lg-8">
+        <div class="col-lg-8 col-md-10 col-sm-12">
 
             <?php while (have_posts()) : the_post(); ?>
 
-                <article>
-                    <h1><?php the_title(); ?></h1>
+                <h1><?php the_title(); ?></h1>
 
-                    <div class="mb-3 text-muted">
-                        <?php the_date(); ?>
-                    </div>
+                <div>
+                    <?php the_content(); ?> 
 
-                    <div>
-                        <?php the_content(); ?>
-                    </div>
-                </article>
-
+                </div>
             <?php endwhile; ?>
 
         </div>
